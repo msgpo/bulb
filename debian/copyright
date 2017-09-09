@@ -1,0 +1,17 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: bulb
+Source: https://github.com/subgraph/bulb
+
+Files: *
+Copyright: 2015 Yawning Angel <yawning at torproject dot org>
+License: CC0
+
+Files: debian/*
+Copyright: 2017 Alexsandr Kibal <ak@subgraph.com>
+License: CC0
+Comment: Debian packaging is licensed under the same terms as upstream
+
+License: CC0
+ CC0 1.0 Universal
+ https://creativecommons.org/publicdomain/zero/1.0/
+ .

@@ -1,0 +1,5 @@
+golang-github-yawning-bulb-dev (0.0.1-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #283)
+
+ -- Alexsandr Kibal <ak@subgraph.com>  Sat, 09 Sep 2017 18:40:09 +0000

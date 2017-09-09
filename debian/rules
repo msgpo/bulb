@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+export DH_OPTIONS
+export DH_GOPKG := github.com/yawning/bulb
+
+%:
+	dh $@ --buildsystem=golang --with=golang,systemd
+
+override_dh_auto_build:
+	dh_auto_build -- -buildmode=pie -pkgdir=$$(mktemp -d -p $(CURDIR))
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -rf $(CURDIR)/obj-x86_64-linux-gnu/usr/bin/
+	rm -rf $(CURDIR)/debian/golang-github-yawning-bulb-dev/usr/bin
+
+override_dh_auto_test:
+	@echo skipped auto test
